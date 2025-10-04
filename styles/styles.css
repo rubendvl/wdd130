@@ -3,6 +3,9 @@
   --border-color: black;
   --shadow-color: gray;
   --image-width: 105px;
+  --margin: 0;
+  --padding: 0;
+  --box-sizing: border-box;
 }
 nav {
   background-color: darkblue;
