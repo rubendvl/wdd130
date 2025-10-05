@@ -66,4 +66,11 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
+    width: 10%;
+    height: auto;
+}
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 1px;
 }
