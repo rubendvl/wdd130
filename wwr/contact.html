@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>White Water Rafting | Contact Us</title>
+    <meta name="description"
+        content="Contact White Water Rafting: address, phone, email, map, team profiles, and a form to ask about trips, reservations, or the website.">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header class="grid">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="White Water Rafting logo" width="120" height="120">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>We’re happy to answer questions about our company, trips, and reservations. Use the form below or reach
+                us using the information provided.</p>
+        </section>
+
+        <section id="company-info">
+            <h2>Company Information</h2>
+
+            <div class="grid">
+                <div>
+                    <h3>Address</h3>
+                    <p>123 River Rd, Suite 4<br>Adventure City, AC 99999</p>
+
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@whitewaterriver.example">info@whitewaterriver.example</a></p>
+                </div>
+
+                <div>
+                    <h3>Find Us</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.834434509374!2d144.9631579159045!3d-37.816279742011535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzUwLjIiRQ!5e0!3m2!1sen!2s!4v1690000000000"
+                        width="100%" height="250" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- DELET: formulario movido al mismo grid para alinear mapa y formulario -->
+                <div id="contact-form">
+                    <h2>Send Us a Message</h2>
+
+                    <form action="#" method="post">
+                        <div>
+                            <label for="name">Your Name</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Your Email</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <fieldset>
+                            <legend>Purpose of Your Message</legend>
+                            <label>
+                                <input type="radio" name="purpose" value="general" required>
+                                General Inquiry
+                            </label><br>
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                Reservation Question
+                            </label><br>
+                            <label>
+                                <input type="radio" name="purpose" value="website">
+                                Website Suggestion
+                            </label>
+                        </fieldset>
+
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="subscribe" value="yes">
+                                Please subscribe me to the monthly newsletter
+                            </label>
+                        </div>
+
+                        <div>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="adventure-row">
+                <figure>
+                    <img src="images/rafting12.jpg" alt="Maria – Lead Guide" width="200" height="160">
+                    <figcaption>María – Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting65.jpg" alt="Joel – Safety Coordinator" width="200" height="160">
+                    <figcaption>Joel – Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting34.jpg" alt="Aisha – Trip Planner" width="200" height="160">
+                    <figcaption>Aisha – Trip Planner</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> White Water Rafting</p>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/fb.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/in.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/ig.png" alt="Instagram Icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
