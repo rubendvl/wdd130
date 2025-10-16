@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary-color: #e9c46a; /* light golden yellow */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color:  #055a05; /* forest green */
+  --primary-color: #e9c46a; 
+  --secondary-color: #f4a261; 
+  --accent1-color: #264653; 
+  --accent2-color:  #055a05; 
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -33,7 +33,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: #fff; 
 }
 
 .hero {
@@ -81,4 +81,88 @@ nav, p, section, article {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
+}
+
+header.grid {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav a:hover,
+header nav a:focus {
+  text-decoration: underline;
+}
+
+#history .grid {
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  grid-gap: 1rem;
+}
+#history figure {
+  text-align: center;
+}
+#history figure img {
+  max-width: 100%;
+  height: auto;
+}
+#history figcaption {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.adventure-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.adventure-row figure {
+  text-align: center;
+}
+.adventure-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .socialmedia {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+footer .socialmedia a { 
+  width: auto;
+}
+footer p {
+  margin: 0 8px;
+  padding: 0;
+}
+
+@media (max-width: 840px) {
+  header, main, footer {
+    width: 100%;
+  }
+  header nav {
+    justify-content: center;
+  }
+  #history .grid {
+    grid-template-columns: 1fr;
+  }
+  .adventure-row {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
