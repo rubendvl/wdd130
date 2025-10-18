@@ -27,18 +27,23 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; 
+  margin: 16px 0;
+  line-height: 1.2;
 }
 
 .hero {
   position: relative;
+}
+
+.hero .hero-title {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  text-align: center;
+  background: rgba(38, 70, 83, 0.85);
+  color: #fff;
 }
 
 .hero article img {
@@ -188,8 +193,27 @@ footer p {
   height: 300px;
   border: 0;
 }
-#company-info h2, #team h2, #contact-form h2 {
-  text-align: center; 
+#company-info h2, #team h2 {
+  text-align: center;
+}
+
+/* Contact form heading */
+#contact-form h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  text-align: left;
+}
+
+/* Center helper used by page-intro */
+.center { text-align: center; }
+
+/* Placeholder styles */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  opacity: 1; /* ensure consistent appearance across browsers */
+  font-style: italic;
 }
 
 #contact-form form {
