@@ -11,6 +11,7 @@
   --accent2-color:  #055a05; 
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
+  --logo-size: 180px;
 }
 
 header {
@@ -88,7 +89,15 @@ header.grid {
   align-items: center;
 }
 
+/* Header logo size */
+header img {
+  display: block;
+  max-width: var(--logo-size);
+  height: auto;
+}
+
 header nav {
+  font-size: 1.3rem;
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
@@ -165,6 +174,7 @@ footer p {
   .adventure-row {
     grid-template-columns: repeat(2, 1fr); 
   }
+  header img { max-width: 90px; }
 }
 
 #company-info .grid {
