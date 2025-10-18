@@ -29,6 +29,8 @@ body {
 h1 {
   margin: 16px 0;
   line-height: 1.2;
+  font-size: 2rem;
+
 }
 
 .hero {
@@ -64,7 +66,7 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: var(--accent1-color);
 }
 
 nav, p, section, article {
